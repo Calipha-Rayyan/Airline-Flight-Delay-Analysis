@@ -1,0 +1,29 @@
+# Raw large dataset - never commit
+data/raw/flights.csv
+data/processed/*.csv
+
+# Keep small reference files and folder structure
+!data/raw/airlines.csv
+!data/raw/airports.csv
+!data/README.md
+!data/processed/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Models (large binaries - optional to exclude; comment out if you want to commit)
+# models/*.pkl
+
+# OS / Editor
+.DS_Store
+.vscode/
+*.swp
+
+# Kaggle credentials - NEVER commit
+kaggle.json
